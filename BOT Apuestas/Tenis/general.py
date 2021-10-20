@@ -3,12 +3,19 @@
 # from datos_tenis_betway import datos_tenis_betway
 # from datos_tenis_williamhill import datos_tenis_williamhill
 import pandas as pd
+import time
+import random
+
+
+start = time.time()
+
 
 # paginas = {'betfair': datos_tenis_betfair,
 #            'bwin': datos_tenis_bwin,
 #            'betway': datos_tenis_betway,
 #            'williamhill': datos_tenis_williamhill}
 
+# # Esta parte de los CSV nos la podremos saltar más adelante para optimizar
 # for [pagina, partidos] in paginas.items():
 #     try:
 #         data = pd.DataFrame.from_dict(
@@ -24,8 +31,8 @@ partidos_bwin = pd.read_csv('datos_tenis_bwin.csv', index_col=0)
 partidos_betway = pd.read_csv('datos_tenis_betway.csv', index_col=0)
 partidos_williamhill = pd.read_csv('datos_tenis_williamhill.csv', index_col=0)
 
-nombres_bwin = list(partidos_bwin['Partido'])
 nombres_betfair = list(partidos_betfair['Partido'])
+nombres_bwin = list(partidos_bwin['Partido'])
 nombres_betway = list(partidos_betway['Partido'])
 nombres_williamhill = list(partidos_williamhill['Partido'])
 
@@ -57,11 +64,12 @@ for [pagina, [lista_nombres, lista_partidos]] in dict_partidos.items():
                     lista_partidos.loc[lista_partidos['Partido'] == nombre].to_dict('split')['data'][0][1:3])}
 
 
-for [key, value] in partidos_bak.items():
-    print(key+': '+f'{value}')
-    print("\n\n")
+# for [key, value] in partidos_bak.items():
+#     print(key+': '+f'{value}')
+#     print("\n\n")
 
 # Ahora vamos a comprobar si se cumple la condición matemática:
+print("Las bacanerías son: \n\n")
 for [partido, cuotas_casas] in partidos_bak.items():
     cuotas_primero = []
     cuotas_segundo = []
@@ -80,10 +88,22 @@ for [partido, cuotas_casas] in partidos_bak.items():
         except:
             pass
         casas.append(casa)
+
     for cuota in cuotas_primero:
         for cuotita in cuotas_segundo:
             try:
                 if cuota > (1+1/(cuotita-1)) or cuotita > (1+1/(cuota-1)):
-                    print("Bacanerías")
+                    print(partido)
+                    print(cuotas_casas)
+                    print(
+                        f'{partido.split(" - ")[0]} ({casas[cuotas_primero.index(cuota)]}). Cuota: {cuota}, Dinero: 1€.')
+                    dinerito = random.uniform(1/(cuotita-1), cuota-1)
+                    print(
+                        f'{partido.split(" - ")[1]} ({casas[cuotas_segundo.index(cuotita)]}). Cuota: {cuotita}, Dinero: {round(dinerito,2)}€.')
+                    print("\n")
             except:
                 pass
+
+end = time.time()
+
+print("Tiempo transcurrido:", end-start)

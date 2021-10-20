@@ -2,28 +2,34 @@ from bs4 import BeautifulSoup
 import time
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
-browser = webdriver.Chrome(options=options)
+browser = webdriver.Chrome(
+    ChromeDriverManager().install(), options=options)
 browser.get("https://sports.bwin.es/es/sports/tenis-5/apuestas")
 
 
 def datos_tenis_bwin():
 
-    # Ahora ya vamos a coger todos los partidos:
-    main = BeautifulSoup(browser.find_elements_by_class_name(
-        'column-wrapper')[1].get_attribute('innerHTML'), 'html.parser')
-
-    partidos_live = main.find_all('div', attrs={'class': 'grid-event-wrapper'})
-
     partidos_dict = {}
+
+    time.sleep(0.5)
+
     try:
+        main = BeautifulSoup(browser.find_element_by_class_name(
+            'event-list').get_attribute('innerHTML'), 'html.parser')
+
+        partidos_live = main.find_all(
+            'div', attrs={'class': 'grid-event-wrapper'})
+
         for partido in partidos_live:
+
             equipos = partido.find_all(
-                'div', attrs={'class': 'participant-wrapper ng-star-inserted'})
+                'div', attrs={'class': 'participant-wrapper'})
 
             # Hay que poner el .strip(" ") para quitar el hueco que deja al final
             equipo1 = equipos[0].text.strip(
@@ -35,7 +41,7 @@ def datos_tenis_bwin():
                 "/", " / ") + ' - ' + equipo2.replace("/", " / ")
 
             cuotas = partido.find_all(
-                'ms-option', attrs={'class': 'grid-option ng-star-inserted'})[0:2]
+                'ms-option', attrs={'class': 'grid-option'})[0:2]
 
             cuotas = [cuota.text for cuota in cuotas]
             for cuota in cuotas:
@@ -45,7 +51,7 @@ def datos_tenis_bwin():
             if cuotas and len(cuotas) == 2:
                 partidos_dict[equipos_bak.replace("Reserves", "")] = cuotas
     except:
-        pass
+        print("Bwin ha fallado")
 
     browser.quit()
 

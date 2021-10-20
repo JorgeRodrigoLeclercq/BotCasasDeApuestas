@@ -1,0 +1,132 @@
+import time
+from selenium.webdriver.common.keys import Keys
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+
+
+options = webdriver.ChromeOptions()
+options.add_experimental_option('excludeSwitches', ['enable-logging'])
+
+
+browser = webdriver.Chrome(
+    ChromeDriverManager().install(), options=options)
+browser.get("https://betway.es/es/sports/cpn/tennis/231")
+time.sleep(3)
+
+
+def apostar_betway(partido, cuota, dinero):
+
+    time.sleep(2)
+
+    # Vamos a quitar las cookies:
+    browser.find_element_by_class_name("cookiePolicyAcceptButton").click()
+
+    time.sleep(5)
+    # Hacemos un ajuste:
+    cuota = str(cuota).replace(".", ",")
+    if len(cuota.split(",")[1]) == 1:
+        cuota = cuota + "0"
+    print(cuota)
+
+    # Hay que hacer esto para que pinche bien sobre el botón al cambiar de tipo de partido:
+    html = browser.find_element_by_tag_name('html')
+    for _ in range(25):
+        html.send_keys(Keys.ARROW_DOWN)
+
+    partido_apostar = None
+
+    # Miramos si el partido está en el ATP:
+    elements = browser.find_elements_by_class_name('oneLineEventItem')
+
+    for elemento in elements:
+        equipos = elemento.find_elements_by_class_name('teamName')
+        equipo1 = equipos[0].text[:-1].replace("● ", "")
+        equipo2 = equipos[1].text.replace(" ●", "")
+        nombre = equipo1 + '- '+equipo2
+
+        if nombre == partido:
+            partido_apostar = elemento
+            break
+
+    # Si no lo ha encontrado nos movemos al WTA
+    if not partido_apostar:
+        for _ in range(len(elements)):
+            html.send_keys(Keys.ARROW_UP)
+            html.send_keys(Keys.ARROW_UP)
+
+        botones = browser.find_elements_by_class_name(
+            "contentSelectorItemButton")
+        botones[-2].click()
+
+        time.sleep(1)
+
+        elements = browser.find_elements_by_class_name('oneLineEventItem')
+
+        html.send_keys(Keys.ARROW_DOWN)
+        html.send_keys(Keys.ARROW_DOWN)
+        html.send_keys(Keys.ARROW_DOWN)
+
+        for elemento in elements:
+            html.send_keys(Keys.ARROW_DOWN)
+            html.send_keys(Keys.ARROW_DOWN)
+
+            equipos = elemento.find_elements_by_class_name('teamName')
+            equipo1 = equipos[0].text[:-1].replace("● ", "")
+            equipo2 = equipos[1].text.replace(" ●", "")
+            nombre = equipo1 + '- '+equipo2
+
+            if nombre == partido:
+                partido_apostar = elemento
+                break
+
+    # Si no lo ha encontrado nos movemos a Challenger:
+    if not partido_apostar:
+        for _ in range(len(elements)):
+            html.send_keys(Keys.ARROW_UP)
+            html.send_keys(Keys.ARROW_UP)
+
+        botones = browser.find_elements_by_class_name(
+            "contentSelectorItemButton")
+        botones[-1].click()
+
+        time.sleep(1)
+
+        elements = browser.find_elements_by_class_name('oneLineEventItem')
+
+        html.send_keys(Keys.ARROW_DOWN)
+        html.send_keys(Keys.ARROW_DOWN)
+        html.send_keys(Keys.ARROW_DOWN)
+        html.send_keys(Keys.ARROW_DOWN)
+
+        for elemento in elements:
+            html.send_keys(Keys.ARROW_DOWN)
+            html.send_keys(Keys.ARROW_DOWN)
+
+            equipos = elemento.find_elements_by_class_name('teamName')
+            equipo1 = equipos[0].text[:-1].replace("● ", "")
+            equipo2 = equipos[1].text.replace(" ●", "")
+            nombre = equipo1 + '- '+equipo2
+
+            if nombre == partido:
+                partido_apostar = elemento
+                break
+
+    # Si ha encontrado el partido entonces apostamos:
+    if partido_apostar:
+        cuotas = partido_apostar.find_elements_by_class_name("baseOutcomeItem")
+
+        elemento_clickar = None
+        for element in cuotas:
+            if element.text == str(cuota).replace(".", ","):
+                elemento_clickar = element
+
+        time.sleep(1)
+
+        elemento_clickar.click()
+
+        time.sleep(1)
+
+        hueco = html.find_element_by_class_name("stakeInput")
+        hueco.send_keys(dinero)
+
+    # browser.quit()

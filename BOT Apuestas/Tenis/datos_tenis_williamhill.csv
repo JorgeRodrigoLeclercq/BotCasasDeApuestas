@@ -1,10 +1,561 @@
 ,Partido,1,2
-0,Aryna Sabalenka - Anastasia Pavlyuchenkova,1.00,26.00
-1,Bara/Abdelaziz - Baptiste/Osuigwe,4.00,1.22
-2,Krunic/Radwanska - Gleason/Loeb,1.22,4.00
-3,Govortsova/Zarazua - Hozumi/Kato,1.61,2.20
-4,Escorihuela/Papamichail - Hayashi/Morisaki,13.00,1.02
-5,Inoue/Omae - Burrage/Hourigan,29.00,1.00
-6,Awad/Jorge - Marcinkevica/Poznikhirenko,2.00,1.73
-7,Perrin/Sugnaux - Bandecchi/Stefanini,2.75,1.40
-8,Marcela Zacarias - Taylor Cataldi,1.00,41.00
+0,Lorenzo Sonego - Holger Vitus Nodskov Rune,1.40,2.75
+1,Vasek Pospisil - Andy Murray,2.50,1.50
+2,Mikael Ymer - Pablo Carreño Busta,2.75,1.44
+3,Soonwoo Kwon - Dusan Lajovic,1.61,2.30
+4,Munar/Polmans - Bublik/Golubev,1.28,3.50
+5,Pel/Qureshi - Glasspool/Heliovaara,2.20,1.61
+6,Anastasia Potapova - Petra Kvitova,4.50,1.17
+7,Paula Badosa - Anett Kontaveit,2.00,1.80
+8,Ann Li - Harriet Dart,1.17,4.50
+9,Lauren Davis - Katie Volynets,1.11,6.00
+10,Hailey Baptiste - Nuria Parrizas Diaz,2.20,1.67
+11,Alexa Glatch - Saisai Zheng,4.00,1.25
+12,Beatriz Haddad Maia - Priscilla Hon,1.33,3.30
+13,Madison Brengle - Louisa Chirico,1.25,4.00
+14,Mariam Bolkvadze - Xinyu Wang,2.30,1.61
+15,Neel/Santamaria - Wang/Zheng,1.80,1.91
+16,Bolkvadze/Zarazua - Inglis/Okamura,1.53,2.37
+17,Marino/Liang - Jacquemot/Yu,2.00,1.73
+18,Diaz/Jakupovic - Loeb/Muhammad,2.75,1.40
+19,Alexis Gautier - Gonzalo Lama,1.50,2.50
+20,Papu Gómez - Juan Pablo Ficovich,6.50,1.10
+21,Gerald Melzer - Patrick Kypson,1.67,2.10
+22,Pedro Sakamoto - Johan Nikles,1.73,2.00
+23,Juan Pablo Varillas - Genaro Alberto Olivieri,1.30,3.40
+24,Maxime Janvier - Dominic Stephan Stricker,2.37,1.53
+25,Ryan Peniston - Max Purcell,5.00,1.14
+26,Aleksandar Vukic - Cannon Kingsley,1.53,2.37
+27,Martin/Oliveira - Meza/Villanueva,1.25,3.75
+28,Galdos/Mena - Gómez/Tirante,2.50,1.50
+29,Gonzalez/Maceiras - Gomez-Herrera/Olivo,2.10,1.67
+30,Vela/Sevilla - Hidalgo/Rodríguez,13.00,1.02
+31,Lenz/Melzer - March/Tiffon,1.36,3.00
+32,Galloway/Lawson - King/Roelofse,1.36,3.00
+33,Fancutt/Kubler - King/Withrow,3.00,1.36
+34,Nam/Song - Aragone/Barrientos,2.20,1.61
+35,Chung/Hong - Harrison/Novikov,3.25,1.33
+36,Huey/Nielsen - Gengel/Neuchrist,2.37,1.53
+37,Marterer/Rosol - Forti/Giustino,1.50,2.50
+38,Tadeas Paroulek - Jeffrey Von Der Schulenburg,5.50,1.12
+39,Blu Baker - Pedro Vives Marcos,2.00,1.73
+40,Omni Kumar - Henry Patten,1.40,2.75
+41,Finn Bass - Martin Damm,5.00,1.14
+42,Inaki Montes-de La Torre - Radu Mihai Papoe,1.14,5.00
+43,Gianni Ross - Paul Jubb,6.00,1.11
+44,Aleksa Bucan - Gabi Adrian Boitan,17.00,1.01
+45,Mark Whitehouse - Ryan Shane,1.83,1.83
+46,Tyler Zink - Florian Broska,2.00,1.73
+47,Eden Silva - Arina Rodionova,3.00,1.36
+48,Natalija Stevanovic - Dalila Spiteri,2.05,1.70
+49,Oona Orpana - Anna Hertel,2.37,1.53
+50,Marcela Zacarias - Kayla Day,1.15,4.75
+51,Ellie Douglas - Sachia Vickery,15.00,1.02
+52,Tiphanie Fiquet - Maria Lourdes Carle,3.75,1.25
+53,Mccartney Kessler - Solymar Colling,1.61,2.20
+54,Charlotte Chavatipon - Ivana Popovic,1.61,2.20
+55,Mercedes Aristegui - Rasheeda Mcadoo,4.00,1.22
+56,Emiliana Arango - Adriana Reami,1.22,4.00
+57,Wishaya Trongcharoenchaikul - Jonas Maier,1.44,2.62
+58,Joshua Sheehy - Juan Alejandro Hernandez Serrano,3.75,1.25
+59,Luciano Doria - Osgar O'Hoisin,3.40,1.30
+60,"
+Julian Cundom - Perry Gregg","
+
+3.40
+
+","
+
+1.30
+
+"
+61,"
+Michael Zhu - Toby D. Boyer","
+
+1.61
+
+","
+
+2.20
+
+"
+62,"
+Miles Jones - Joao Victor Couto Loureiro","
+
+1.44
+
+","
+
+2.62
+
+"
+63,"
+Dali Blanch - Gerardo Lopez Villasenor","
+
+3.50
+
+","
+
+1.28
+
+"
+64,"
+Joao Marcos Nusdeo - Francisco Llanes","
+
+2.37
+
+","
+
+1.53
+
+"
+65,"
+Marcelo Zormann Da Silva - Bruno Fernandez","
+
+1.07
+
+","
+
+7.50
+
+"
+66,"
+Gabriel Pascotto Tumasonis - Asdrubal Gobernate","
+
+1.91
+
+","
+
+1.80
+
+"
+67,"
+Daniel Vecchio Couldrey Rebelo - Nicolas Zanellato","
+
+4.50
+
+","
+
+1.17
+
+"
+68,"
+Joao Lucas Reis Da Silva - Eduardo Ribeiro","
+
+1.14
+
+","
+
+5.00
+
+"
+69,"
+Daniel Dutra Da Silva - Lorenzo Esquici","
+
+1.07
+
+","
+
+7.50
+
+"
+70,"
+Weronika Baszak - Zeel Desai","
+
+2.62
+
+","
+
+1.44
+
+"
+71,"
+Chompoothip Jundakate - Bianca Behulova","
+
+2.25
+
+","
+
+1.60
+
+"
+72,"
+Clara Vlasselaer - Yukina Saigo","
+
+1.08
+
+","
+
+7.00
+
+"
+73,"
+Anouk Koevermans - Yasmine Mansouri","
+
+1.20
+
+","
+
+4.33
+
+"
+74,"
+Isabella Barrera Aguirre - Akilah James","
+
+3.25
+
+","
+
+1.33
+
+"
+75,"
+Gorgodze/Pigossi - Grey/Papamichail","
+
+1.10
+
+","
+
+6.50
+
+"
+76,"
+Aguilar/Jong - Reco/Rousset","
+
+1.33
+
+","
+
+3.25
+
+"
+77,"
+Jirousek/Marcos - Bortnick/Rogers","
+
+2.37
+
+","
+
+1.53
+
+"
+78,"
+Draxl/Schachter - Asaba/Bangoura","
+
+1.80
+
+","
+
+1.91
+
+"
+79,"
+Moratelli/Shinikova - Anderson/Bolton","
+
+12.00
+
+","
+
+1.02
+
+"
+80,"
+Benoit/Silva - Amil/Pirtac","
+
+1.03
+
+","
+
+11.00
+
+"
+81,"
+Bozovic/Osborne - Aney/Gleason","
+
+3.00
+
+","
+
+1.36
+
+"
+82,"
+Harrison/Zacarias - Corley/Corley","
+
+1.33
+
+","
+
+3.25
+
+"
+83,"
+Chang/Zhu - Pulchartova/Williford","
+
+1.57
+
+","
+
+2.25
+
+"
+84,"
+Hart/Lahey - Daavettila/Graham","
+
+1.44
+
+","
+
+2.62
+
+"
+85,"
+Leite/Pereira - Dias/Heide","
+
+2.20
+
+","
+
+1.61
+
+"
+86,"
+Reyes/Tedesco - Nusdeo/Rodrigues","
+
+1.11
+
+","
+
+6.00
+
+"
+87,"
+Oliveira/Rodrigues - Gutierrez/Miele","
+
+4.50
+
+","
+
+1.17
+
+"
+88,"
+Caldera/Fernandez - Morales/Weedon","
+
+17.00
+
+","
+
+1.01
+
+"
+89,"
+Ulyashchenko/Wijesundera - Pang/Radenkovic","
+
+1.05
+
+","
+
+9.00
+
+"
+90,"
+Collens/Snells - Rogers/Rosca","
+
+6.50
+
+","
+
+1.10
+
+"
+91,"
+Arangio/Fehr - Cano/Murcia","
+
+5.00
+
+","
+
+1.14
+
+"
+92,"
+Ramirez/Rodriguez - Aguirre/Lopez","
+
+1.01
+
+","
+
+17.00
+
+"
+93,"
+Kent/Semenistaja - Fontenel/Lopez","
+
+1.67
+
+","
+
+2.10
+
+"
+94,"
+Becerra/James - Ivanova/Proctor","
+
+7.00
+
+","
+
+1.08
+
+"
+95,"
+Kobe Diaz - Maverick Banes","
+
+11.00
+
+","
+
+1.03
+
+"
+96,"
+Scott Puodziunas - Patrick Coates Beadman","
+
+1.06
+
+","
+
+8.00
+
+"
+97,"
+Cade Birrell - Tai Sach","
+
+2.37
+
+","
+
+1.53
+
+"
+98,"
+Calum Puttergill - Marcus Schoeman","
+
+1.04
+
+","
+
+10.00
+
+"
+99,"
+Albert Kirsten - Thomas Gadecki","
+
+4.50
+
+","
+
+1.17
+
+"
+100,"
+Connor Richardson - Dusan Rsovac","
+
+7.50
+
+","
+
+1.07
+
+"
+101,"
+Jayden Court - Sam Oster","
+
+1.83
+
+","
+
+1.83
+
+"
+102,"
+Sam Ryan Ziegann - Winter Meagher","
+
+2.50
+
+","
+
+1.50
+
+"
+103,"
+Kate Kim - Isabella Dilaura","
+
+1.61
+
+","
+
+2.20
+
+"
+104,"
+Avery Esquivel - Gianna Pielet","
+
+6.50
+
+","
+
+1.10
+
+"
+105,"
+Jayci Goldsmith - Rhiann Newborn","
+
+2.00
+
+","
+
+1.73
+
+"
+106,"
+Rahul Dhokia - Pierce Rollins","
+
+3.50
+
+","
+
+1.28
+
+"
+107,"
+Anish Sriniketh - Alan Magadan","
+
+2.75
+
+","
+
+1.40
+
+"
+108,"
+Ritesh Patil - Luke Casper","
+
+3.25
+
+","
+
+1.33
+
+"
+109,"
+Bjorn Swenson - Alan Magadan","
+
+1.91
+
+","
+
+1.80
+
+"

@@ -1,22 +1,115 @@
 ,Partido,1,2
-0,Aryna Sabalenka - Anastasia Pavlyuchenkova,1.001,20.0
-1,A Krunic / U Radwanska - Q Gleason / J Loeb,1.18,4.5
-2,I M Bara / M Sherif Ahmed Abdelaziz - H Baptiste / W Osuigwe,4.2,1.2
-3,I Burillo Escorihuela / D Papamichail - E Hayashi / K Morisaki,12.0,1.02
-4,B Gatica / R Pereira - M Kempen / R Mcadoo,4.33,1.2
-5,O Govortsova / R Zarazua - E Hozumi / M Kato,1.6,2.1
-6,C Perrin / T Sugnaux - S Bandecchi / L Stefanini,2.75,1.4
-7,Jasmine Paolini - Anna-Karolina Schmiedlova,2.25,1.57
-8,Carter / Stefani - Lechemia / Wachaczyk,1.15,4.5
-9,Vit Kopriva - Michael Vrbensky,1.45,2.5
-10,Dominic Thiem - John Isner,1.3,3.5
-11,Koolhof / Kubot - Mektic / Pavic,3.0,1.34
-12,Oscar Otte - Maxime Cressy,1.28,3.3
-13,Ostapenko / Pavlyuchenkova - Dabrowski / Schuurs,2.4,1.5
-14,Gille / Vliegen - Dodig / Polasek,2.5,1.5
-15,Rafael Nadal - Alexander Zverev,1.2,4.5
-16,Aliona Bolsova - Harmony Tan,1.67,2.1
-17,Granollers / Zeballos - Herbert / Mahut,2.25,1.58
-18,Bopanna / Shapovalov - Puetz / Zverev,1.75,1.95
-19,Alexander Bublik - Casper Ruud,3.5,1.3
-20,Matteo Berrettini - Cristian Garin,1.54,2.45
+0,Sonego - H Rune,1.28,3.35
+1,V Pospisil - Murray,2.55,1.45
+2,Potapova - Kvitova,3.25,1.33
+3,An Li - Dart,1.2,4.5
+4,Davis - Volynets,1.17,5.0
+5,Janvier - Dom Stricker,2.63,1.44
+6,G Melzer - P Kypson,1.44,2.63
+7,Gautier - Lama,1.44,2.63
+8,A Gomez - Ficovich,5.5,1.13
+9,Ry Peniston - Purcell,5.5,1.12
+10,M Yapur Lopez - M Portillo Ramirez,17.0,1.01
+11,C Jundakate - B Behulova,2.25,1.58
+12,C Vlasselaer - Y Saigo,1.09,6.2
+13,A Koevermans - Y Mansouri,1.82,1.9
+14,O Orpana - A Hertel,2.2,1.6
+15,M Zacarias - K Day,1.16,4.5
+16,E Douglas - S Vickery,15.0,1.002
+17,T Fiquet - M Carle,3.8,1.22
+18,E Silva - A Rodionova,2.55,1.45
+19,N Stevanovic - D Spiteri,2.25,1.58
+20,J Nusdeo - F Llanes,1.38,2.8
+21,M Zormann Da Silva - B Fernandez,1.02,10.0
+22,G Tumasonis - A Gobernate,1.85,1.85
+23,B Baker - P Vives Marcos,1.85,1.85
+24,T Paroulek - J Von Der Schulenburg,5.5,1.12
+25,Andrew/Trotter - Boulais/Cash,2.15,1.62
+26,I Barrera Aguirre - A James,3.5,1.25
+27,W Trongcharoenchaikul - J Maier,1.36,2.7
+28,J Sheehy - J Hernandez Serrano,3.65,1.2
+29,L Doria - O O'Hoisin,3.1,1.28
+30,O Kumar - H Patten,1.29,3.05
+31,Neel/Santamaria - Wang/Zheng,1.73,2.1
+32,C Chavatipon - I Popovic,1.54,2.2
+33,M Benoit / E Silva - M Amil / B L Pirtac,1.002,10.0
+34,D Rebelo - N Zanellato,4.2,1.17
+35,Paula Badosa - Kontaveit,2.0,1.8
+36,H Baptiste - Parrizas Diaz,2.2,1.67
+37,M Kessler - S Colling,1.6,2.1
+38,J Cundom - P Gregg,3.3,1.24
+39,M Aristegui - R Mcadoo,5.0,1.1
+40,Vukic - Ca Kingsley,1.45,2.5
+41,Bolkvadze/Zarazua - Inglis/Okamura,1.53,2.5
+42,Galloway/Lawson - King/Roelofse,1.34,3.0
+43,Fancutt/Kubler - King/Withrow,3.0,1.34
+44,I Montes-de La Torre - R Papoe,1.08,5.5
+45,D Blanch - G Lopez Villasenor,3.3,1.24
+46,A Ulyashchenko / R Wijesundera - S Peng / M Radenk,1.05,8.5
+47,E Arango - A Reami,1.17,4.0
+48,M Ymer - Carreno Busta,2.7,1.4
+49,Fatic - Zukas,1.4,2.75
+50,G Ross - P Jubb,8.0,1.02
+51,C Harrison / M Zacarias - C Corley / I Corley,1.29,3.05
+52,M J Portillo Ramirez / V Rodriguez - I Barrera Agu,1.004,21.0
+53,S Kent / D Semenistaja - C Fontenel / Q Lopez,1.67,2.1
+54,A Bozovic / A Osborne - J Aney / Q Gleason,3.0,1.3
+55,A M Becerra / A James - D Ivanova / L Proctor,6.5,1.08
+56,N Arakawa / T Malik - J Hinojosa Gomez / A Rusova,1.8,1.91
+57,Sakamoto - Nikles,1.7,2.0
+58,Liang/Marino - Jacquemot/Yu,2.1,1.73
+59,J Reis Da Silva - E Ribeiro,1.07,5.75
+60,M Whitehouse - R Shane,1.9,1.72
+61,J M Hart / A Lahey - S Daavettila / A Graham,1.4,2.55
+62,Nam/Song - Aragone/Barrientos,2.0,1.7
+63,T Zink - F Broska,1.95,1.68
+64,Jua Varillas - Olivieri,1.29,3.25
+65,D Dutra Da Silva - L Esquici,1.02,8.0
+66,Lenz/Melzer - March/Martin Tiffon,1.36,2.88
+67,Bolkvadze - Xin Wang,2.25,1.62
+68,Haddad Maia - Pris Hon,1.33,3.25
+69,Glatch - S Zheng,3.75,1.25
+70,Brengle - Chirico,1.25,3.75
+71,S Kwon - Lajovic,1.62,2.25
+72,D Ignat - A Braynin,3.3,1.24
+73,T Martin - L Giacomini,3.65,1.17
+74,D Recek - A Paulson,4.0,1.17
+75,O Giacalone - L Nardi,4.0,1.17
+76,M Havlicek - P Nejedly,10.5,1.002
+77,Karatsev - Emil Ruusuvuori,2.0,1.8
+78,D Merida Aguilar - O Mesquida Berg,1.5,2.3
+79,K Mishkin - A Barroso Campos,10.5,1.002
+80,A Cohen - D Fernandez Flores,2.4,1.44
+81,D Klok - K Juhas,2.4,1.44
+82,N Parizzia - F Iannaccone,4.2,1.17
+83,D Veremeichuk - M Bondar,1.54,2.2
+84,L Bocchi - N Alosha Ushakov,1.01,8.5
+85,N Hornitschek - G Madarasz,9.0,1.005
+86,F Campana - Y Wojcik,1.95,1.68
+87,Kontinen/Mclachlan - Barrere/Pouille,1.25,3.5
+88,Gerasimov - Taberner,1.62,2.25
+89,M Damas - E Butvilas,1.1,5.0
+90,R Schaer - I Monzon,3.05,1.29
+91,A Setkic - V Jovic,1.02,8.0
+92,L Pavlovic - O Ovcharenko,5.5,1.08
+93,Sabanov/Sabanov - Nys/Rinderknech,2.8,1.38
+94,Mag Linette - Rybakina,3.4,1.3
+95,V Vacherot - G Kravchenko,1.9,1.72
+96,Kecmanovic - Bublik,2.25,1.62
+97,V Oliver Moratalla - C Lopez Montagud,8.75,1.01
+98,A Manzanera Pertusa - J Friend,1.2,3.65
+99,R Kawakami - L Rodriguez,1.5,2.3
+100,Sakkari - Ostapenko,1.8,2.0
+101,De Minaur - Giron,1.5,2.4
+102,Christian/Routliffe - Heisen/Voracova,1.57,2.25
+103,F Marchetti / P Schiavetti - F Hach Amar Idrissi /,1.0,11.5
+104,A Marti Pujolras - N Lopez,1.02,8.0
+105,Arneodo/Bonzi - Golubev/Nedovyesov,2.75,1.4
+106,Martincova - Pavlyuchenkova,3.75,1.22
+107,Reese/Verbeek - Brkic/Cacic,2.25,1.58
+108,M Alcala Gurri / B Pujol Navarro - F Andreu Garcia,2.3,1.5
+109,Kohlschreiber - Monfils,3.0,1.34
+110,Sorribes Tormo - Bencic,2.75,1.44
+111,Teichmann - Riske,1.4,2.88
+112,Basilashvili - Davidovich Fokina,1.65,2.1
+113,Danilina/Marozava - Mirza/Zhang,4.0,1.2

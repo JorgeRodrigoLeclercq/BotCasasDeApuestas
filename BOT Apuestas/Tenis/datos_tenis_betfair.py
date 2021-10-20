@@ -3,6 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 from bs4 import BeautifulSoup
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -10,7 +12,9 @@ options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
 def datos_tenis_betfair():
 
-    browser = webdriver.Chrome(options=options)
+    from webdriver_manager.chrome import ChromeDriverManager
+    browser = webdriver.Chrome(
+        ChromeDriverManager().install(), options=options)
     browser.get("https://www.betfair.es/sport/tennis")
 
     time.sleep(1)
@@ -53,7 +57,8 @@ def datos_tenis_betfair():
 
             partidos_dict[equipos] = cuotas
     except:
-        pass
+        print("Betfair ha fallado")
+
 
     # for [key, value] in partidos_live.items():
     #     print(key+' : '+f'{value}')
